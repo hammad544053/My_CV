@@ -23,6 +23,7 @@ body{
 
 
 #introduction {
+  border: white;
   display: flex; /* Enable flexbox layout for #introduction */
   margin-left: 50px;
   align-items: center; /* Align content vertically within #introduction */
@@ -43,9 +44,10 @@ body{
 }
 
 .container div {
+
   flex: 1; /* Distribute available space equally */
   padding: 20px;
-  border: 1px solid #ddd;
+  border: white;
   margin: 0 40px; /* Add space between sections */
 }
 
