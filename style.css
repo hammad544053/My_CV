@@ -1,0 +1,91 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+#containershape {
+  margin-left: 66px;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 370px;
+  border-radius: 0 0 100% 100%;
+  background-color: aqua;
+  position: absolute;  /* Required for z-index to work */
+  z-index: -1;  /* Lower z-index, so it's below #introduction */
+}
+
+#introduction {
+
+  position: relative;  /* Required for z-index to work */
+  z-index: 0;  /* Higher z-index, so it's above #containershape */
+}
+
+
+#introduction {
+  display: flex; /* Enable flexbox layout for #introduction */
+  margin-left: 50px;
+  align-items: center; /* Align content vertically within #introduction */
+}
+
+#introduction img {
+  background-color: rgb(1, 9, 238);
+  width: 200px;
+  height: 200px;
+  border-radius: 100%; /* Optional: Add rounded corners */
+  margin-left: 300px; /* Move image to the right side */
+}
+
+
+.container {
+  display: flex;
+  align-items: flex-start; /* Optional: Align content at top */
+}
+
+.container div {
+  flex: 1; /* Distribute available space equally */
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 0 40px; /* Add space between sections */
+}
+
+#Summary hr,
+#experience hr {
+  margin: 10px 0; /* Adjust margin for hr elements */
+}
+div{
+  border: none;
+  padding: 20px; /* Maintain padding for spacing */
+  margin: 0 10px; /* Maintain spacing between sections */
+}
+button{
+  background-color: cadetblue;
+  border: none;
+  border-radius: 20px;
+  padding: 4px;
+}
+h2 {
+  background-color: rgb(1, 9, 238); /* Same background color as #introduction image */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Add some padding for content */
+  margin-bottom: 10px; /* Add space between headings */
+  color: white; /* Text color to contrast with background */
+}
+h4 {
+  height: 10px;
+  width: 160px;
+  background-color: rgb(255, 251, 0); /* Same background color as #introduction image */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Add some padding for content */
+  margin-bottom: 10px; /* Add space between headings */
+  color: rgb(0, 0, 0); /* Text color to contrast with background */
+}
+h3 {
+  height: 20px;
+  width: 370px;
+  background-color: rgb(255, 0, 98); /* Same background color as #introduction image */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Add some padding for content */
+  margin-bottom: 10px; /* Add space between headings */
+  color: rgb(0, 0, 0); /* Text color to contrast with background */
+}
